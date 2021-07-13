@@ -37,7 +37,7 @@ MAPKEY = "pk.eyJ1IjoiY2FzZXloZWFsZXkiLCJhIjoiY2txd2J5aWQ1MG12YzJwdDl5anNmcTlmYiJ
 
 @st.cache
 def loaddata():
-    df = pd.read_csv('/Users/caseyhealey/PycharmProjects/Practice_Problems/database.csv')
+    df = pd.read_csv('database.csv')
     # The dataset contains a few values that are outside the range of NYC
     # The code below deletes the rows with errors
     df = df[df['LATITUDE'].values > 39]
