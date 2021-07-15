@@ -33,8 +33,6 @@ import seaborn as sns
 import random
 
 
-MAPKEY = "pk.eyJ1IjoiY2FzZXloZWFsZXkiLCJhIjoiY2txd2J5aWQ1MG12YzJwdDl5anNmcTlmYiJ9.47eYp-VmVF0AGRM2bCHS6g"
-
 @st.cache
 def loaddata():
     df = pd.read_csv('database.csv')
